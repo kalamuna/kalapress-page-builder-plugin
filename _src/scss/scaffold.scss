@@ -1,0 +1,143 @@
+$margin-large: 50px !default;
+$margin-small: 30px !default;
+
+.kpb-content-modules {
+
+  overflow:hidden;
+
+    // Styles For Block Container & Blocks
+
+    padding-top: $margin-small;
+    padding-bottom: 0;
+    margin: 0px;
+
+    @media (min-width: 768px) {
+        padding-top: $margin-large;
+        padding-bottom: 0;
+    }
+
+    .kpb-content-module {
+        display: block;
+        margin-top: 0;
+        margin-bottom: $margin-small;
+        position: relative;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+            margin-bottom: $margin-large;
+        }
+
+        [class*='col-'] {
+          * > :first-child { margin-top: 0; margin-left: 0; }
+          * > :last-child { margin-bottom: 0; margin-right: 0; }
+        }
+
+        // Modifiers
+
+        &[class*='--margin-bottom-double'] {
+          margin-bottom: $margin-small * 2;
+              @media (min-width: 768px) {
+            margin-bottom: $margin-large * 2;
+          }
+        }
+
+        &[class*='--margin-bottom-half'] {
+          margin-bottom: $margin-small / 2;
+              @media (min-width: 768px) {
+            margin-bottom: $margin-large / 2;
+          }
+        }
+
+        &[class*='--margin-bottom-quarter'] {
+          margin-bottom: $margin-small / 4;
+              @media (min-width: 768px) {
+            margin-bottom: $margin-large / 4;
+          }
+        }
+
+        &[class*='--margin-bottom-none'] {
+          margin-bottom: 0px;
+        }
+
+        &[class*='--top-negative-margin'] {
+          margin-top: -$margin-small;
+              @media (min-width: 768px) {
+            margin-top: -$margin-large;
+          }
+        }
+
+      [class*='__background'] {
+
+        display: block;
+
+        &[class*='--padding-top-double'], [class*='--padding-top-double'] {
+          padding-top: $margin-small * 2;
+              @media (min-width: 768px) {
+            padding-top: $margin-large * 2;
+          }
+        }
+
+        &[class*='--padding-top-full'], [class*='--padding-top-full'] {
+          padding-top: $margin-small;
+              @media (min-width: 768px) {
+            padding-top: $margin-large;
+          }
+        }
+
+        &[class*='--padding-top-half'], [class*='--padding-top-half'] {
+          padding-top: $margin-small / 2;
+              @media (min-width: 768px) {
+            padding-top: $margin-large / 2;
+          }
+        }
+
+        &[class*='--padding-top-quarter'], [class*='--padding-top-quarter'] {
+          padding-top: $margin-small / 4;
+              @media (min-width: 768px) {
+            padding-top: $margin-large / 4;
+          }
+        }
+
+        &[class*='--padding-bottom-double'], [class*='--padding-bottom-double'] {
+          padding-bottom: $margin-small * 2;
+              @media (min-width: 768px) {
+            padding-bottom: $margin-large * 2;
+          }
+        }
+
+        &[class*='--padding-bottom-full'], [class*='--padding-bottom-full'] {
+          padding-bottom: $margin-small;
+              @media (min-width: 768px) {
+            padding-bottom: $margin-large;
+          }
+        }
+
+        &[class*='--padding-bottom-half'], [class*='--padding-bottom-half'] {
+          padding-bottom: $margin-small / 2;
+              @media (min-width: 768px) {
+            padding-bottom: $margin-large / 2;
+          }
+        }
+
+        &[class*='--padding-bottom-quarter'], [class*='--padding-bottom-quarter'] {
+          padding-bottom: $margin-small / 4;
+              @media (min-width: 768px) {
+            padding-bottom: $margin-large / 4;
+          }
+        }
+
+      }
+
+      // Fix content spacing around first and last items
+      [class*='__col'] {
+        *:first-child {
+          margin-top: 0;
+        }
+        *:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+    }    
+}
+

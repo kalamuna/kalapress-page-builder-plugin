@@ -1,0 +1,25 @@
+.kpb-headline {
+
+	text-align: center;
+
+	&--textAlignLeft {
+		text-align: left;
+	}
+
+	&--textAlignRight {
+		text-align: right;
+	}
+		
+	h1, h2 {
+
+		margin-top: 0px;
+		margin-bottom: 0px;
+		line-height: 1;
+	}
+	
+	h3 {
+		margin: 10px 0px 0px 0px;
+		line-height: 1;
+	}
+	
+}

@@ -1,0 +1,17 @@
+/* Styles to be applied to WP Admin UI */
+
+.acf-flexible-content {
+  .layout {
+    .acf-fc-layout-handle {
+      // Make it easier to differentiate between content modules
+      background-color: #7176b8;
+      color: #fff !important;
+    }
+    &[data-layout="schema"] {
+      &>.acf-fields>div:not([data-name="json_markup"] ){display: none;}
+      
+    }
+    
+  }
+
+}

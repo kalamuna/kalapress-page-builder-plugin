@@ -1,0 +1,1 @@
+<<?php echo get_sub_field('type'); ?>><?php echo get_sub_field('headline'); ?></<?php echo get_sub_field('type'); ?>>
