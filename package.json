@@ -1,5 +1,5 @@
 {
-  "name": "kalapress-builder-plugin",
+  "name": "kalamuna/kalapress-builder-plugin",
   "version": "1.0.0",
   "description": "KalaPress page builder plugin. Enables block style page editing.",
   "main": "kalapress-builder.php",
