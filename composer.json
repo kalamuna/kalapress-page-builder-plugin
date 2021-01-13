@@ -1,5 +1,5 @@
 {
-  "name": "kalamuna/kalapress-builder-plugin",
+  "name": "kalamuna/kalapress-page-builder",
   "version": "1.0.0",
   "type": "wordpress-plugin",
   "require": {
