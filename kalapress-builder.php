@@ -13,8 +13,8 @@ Author URI: https://www.kalamuna.com
 require('config.php');
 
 // Pull In Custom Configs From Theme (if provided)
-if ( file_exists(get_stylesheet_directory() . '/kalapress-builder-config.php') ) {
-	include( get_stylesheet_directory() . '/kalapress-builder-config.php' );
+if ( file_exists(get_stylesheet_directory() . '/kalapress-page-builder-config.php') ) {
+	include( get_stylesheet_directory() . '/kalapress-page-builder-config.php' );
 }
 
 
@@ -33,10 +33,10 @@ foreach (scandir(plugin_dir_path( __FILE__ ) . '/content-modules') as $file) {
 }
 
 // Discover All User Defined and Overridden Content Types From Theme
-if (file_exists(get_stylesheet_directory() . '/kalapress-builder/content-modules' )):
-	foreach (scandir(get_stylesheet_directory() . '/kalapress-builder/content-modules') as $file) {
+if (file_exists(get_stylesheet_directory() . '/kalapress-page-builder/content-modules' )):
+	foreach (scandir(get_stylesheet_directory() . '/kalapress-page-builder/content-modules') as $file) {
 		if ('.' != $file && '..' != $file) {
-			$full_path = get_stylesheet_directory() . '/kalapress-builder/content-modules/' . $file;
+			$full_path = get_stylesheet_directory() . '/kalapress-page-builder/content-modules/' . $file;
 			if (is_dir($full_path)) {
 				$kpb['content_types'][$file] = $full_path;
 			}
