@@ -4,7 +4,7 @@
 
 $acfConfig = array (
     
-    'key' => 'tcm_content',
+    'key' => 'kpb_content',
     'title' => $kpb['config']['name'],
     'fields' => array (
         array (

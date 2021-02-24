@@ -1,6 +1,6 @@
 <?php
     
-    $kpb_content_modules['tcm_content_module_primary_content'] = array (
+    $kpb_content_modules['kpb_content_module_primary_content'] = array (
 					'key' => 'kpb_field5c63126bc2f03',
 					'name' => 'primary-content',
 					'label' => 'Primary Content',

@@ -23,9 +23,9 @@ if ( file_exists(get_stylesheet_directory() . '/kalapress-page-builder-config.ph
 global $kpb;
 
 // Discover All "Built In" Content Types From Plugin
-foreach (scandir(plugin_dir_path( __FILE__ ) . '/content-modules') as $file) {
+foreach (scandir(plugin_dir_path( __FILE__ ) . 'content-modules') as $file) {
 	if ('.' != $file && '..' != $file) {
-		$full_path = plugin_dir_path( __FILE__ ) . '/content-modules/' . $file;
+		$full_path = plugin_dir_path( __FILE__ ) . 'content-modules/' . $file;
 		if (is_dir($full_path)) {
 			$kpb['content_types'][$file] = $full_path;
 		}

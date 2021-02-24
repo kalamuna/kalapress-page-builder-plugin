@@ -10,7 +10,7 @@
         'modules' => array('headline')
     );
     
-    $kpb_content_modules['tcm_content_module_headline'] = array (
+    $kpb_content_modules['kpb_content_module_headline'] = array (
 					'key' => 'kpb_field5c6313382c397',
 					'name' => 'headline',
 					'label' => 'Headline',

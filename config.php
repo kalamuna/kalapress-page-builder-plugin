@@ -21,47 +21,13 @@ $kpb['config']['acf']['location'] = array (
     );
 
 $kpb['config']['acf']['customStyles'] = array(
-
-    'kpb--lightBackground' => array(
+    'kpb-light-background' => array(
         'name' => 'Light Background',
         'modules' => array(
-                        'accordion',
-                        'blog-posts',
-                        'buttons',
-                        'cards',
-                        'client-stories',
-                        'headline',
-                        'hero',
-                        'logos',
-                        'people',
-                        'primary-content',
-                        'product-selector',
-                        'separator',
-                        'tabbed-content',
-                        'testimonials'
-        )
-    ),
-
-    'kpb--darkBackground' => array(
-        'name' => 'Dark Background',
-        'modules' => array(
-            'accordion',
-            'blog-posts',
-            'buttons',
-            'cards',
-            'client-stories',
             'headline',
-            'hero',
-            'logos',
-            'people',
-            'primary-content',
-            'product-selector',
-            'separator',
-            'tabbed-content',
-            'testimonials'
+            'columns'
         )
     )
-
 );
 
 $kpb['config']['acf']['hide_on_screen'] = array (
