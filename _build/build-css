@@ -15,16 +15,3 @@ node-sass --include-path _src/scss \
         -o styles/ \
         --output-style nested \
         && echo "...compiled KalaPress Page Builder admin styles.\n"
-
-node-sass -r content-modules/**/_src/*.scss \
-        --output content-modules/**/styles/*.scss \
-        && echo "...compiled KalaPress Page Builder module styles.\n"
-
-
-node-sass content-modules/headline/_src/styles.scss \
-        --output content-modules/headline \
-        && echo "...compiled KalaPress Page Builder headline module styles.\n"
-
-node-sass content-modules/primary-content/_src/styles.scss \
-        --output content-modules/primary-content \
-        && echo "...compiled KalaPress Page Builder primary-content module styles.\n"

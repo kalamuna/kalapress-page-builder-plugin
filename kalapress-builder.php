@@ -17,6 +17,12 @@ if ( file_exists(get_stylesheet_directory() . '/kalapress-page-builder-config.ph
 	include( get_stylesheet_directory() . '/kalapress-page-builder-config.php' );
 }
 
+// Enqueue CSS Styles
+function kpb_enqueue_scripts() {
+	wp_enqueue_style( 'kalapress-page-builder-css',  plugin_dir_url( __FILE__ ) . "styles/scaffold.css");
+}
+add_action( 'wp_enqueue_scripts', 'kpb_enqueue_scripts' );
+
 
 // Initialize Everything //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

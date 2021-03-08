@@ -69,6 +69,7 @@ $margin-small: 30px !default;
       [class*='__background'] {
 
         display: block;
+        height: 100%;
 
         &[class*='--padding-top-double'], [class*='--padding-top-double'] {
           padding-top: $margin-small * 2;

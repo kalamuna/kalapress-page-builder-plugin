@@ -69,11 +69,6 @@ function get_kpb_content_modules() {
 
                         }
 
-                    // Include Module style.css
-                    if (file_exists($kpb['content_types'][get_row_layout()] . '/styles.css')) {
-	                    wp_enqueue_style( 'tcm-' . get_row_layout() . '-styles', plugins_url( '/styles.css', $kpb['content_types'][ get_row_layout() ] . '/markup.php' ), false, false, 'all' );
-                    }
-
 					// Inculude Enqueues File (If Exists)
                     if (!is_admin() && file_exists($kpb['content_types'][get_row_layout()] . '/enqueues.php')) {
 	                    include($kpb['content_types'][get_row_layout()] . '/enqueues.php');
