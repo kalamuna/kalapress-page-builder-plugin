@@ -13,8 +13,8 @@ Author URI: https://www.kalamuna.com
 require('config.php');
 
 // Pull In Custom Configs From Theme (if provided)
-if ( file_exists(get_stylesheet_directory() . '/kalapress-page-builder-config.php') ) {
-	include( get_stylesheet_directory() . '/kalapress-page-builder-config.php' );
+if ( file_exists(get_stylesheet_directory() . '/kalapress-page-builder/config.php') ) {
+	include( get_stylesheet_directory() . '/kalapress-page-builder/config.php' );
 }
 
 // Enqueue CSS Styles

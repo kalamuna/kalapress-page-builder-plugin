@@ -25,7 +25,8 @@ $kpb['config']['acf']['customStyles'] = array(
         'name' => 'Light Background',
         'modules' => array(
             'headline',
-            'columns'
+            'primary-content',
+	        'buttons'
         )
     )
 );
