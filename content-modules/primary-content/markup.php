@@ -1,9 +1,10 @@
+    <div class="row">
     <?php
         if( have_rows('columns') ) :
             while ( have_rows('columns') ) :
                 the_row();
         ?>
-            <div class="columns__content-column <?php echo ( get_sub_field('width') != 'auto' ? ' kpb-columns__content-column--'.get_sub_field('width') : '' ); ?><?php echo ( get_sub_field('bottom_padding') != 'none' ? ' kpb-columns__content-column--padding-bottom-'.get_sub_field('bottom_padding') : '' ); ?><?php echo ( get_sub_field('bottom_top') != 'none' ? ' kpb-columns__content-column--padding-top-'.get_sub_field('top_padding') : '' ); ?>">
+            <div class="col-md-6 <?php echo ( get_sub_field('width') != 'auto' ? '-md-'.get_sub_field('width') : '' ); ?><?php echo ( get_sub_field('bottom_padding') != 'none' ? ' kpb-columns__content-column--padding-bottom-'.get_sub_field('bottom_padding') : '' ); ?><?php echo ( get_sub_field('bottom_top') != 'none' ? ' kpb-columns__content-column--padding-top-'.get_sub_field('top_padding') : '' ); ?>">
                 <?php
 
                 switch (get_sub_field('content_type')):
@@ -31,3 +32,4 @@
             endwhile;
         endif;
     ?>
+    </div>
