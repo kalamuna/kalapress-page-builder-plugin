@@ -33,8 +33,8 @@ function get_kpb_content_modules() {
                         }
 
                         // Modules JS
-                        if (file_exists(plugins_url('/scripts.js', $kpb['content_types'][get_row_layout()] . '/markup.php'))) {
-                            wp_enqueue_script('tcm-' . get_row_layout(), plugins_url('/scripts.js', $kpb['content_types'][get_row_layout()] . '/markup.php'), false, false, 'all');
+                        if (file_exists($kpb['content_types'][get_row_layout()] . '/scripts.js')) {
+                            wp_enqueue_script('tcm-' . get_row_layout(), get_stylesheet_directory_uri() . '/kalapress-page-builder/content-modules/' . get_row_layout() . '/scripts.js', false, false, 'all');
                         }
 
                         // Get Container Markup
