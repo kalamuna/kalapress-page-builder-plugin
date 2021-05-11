@@ -4,7 +4,7 @@
             while ( have_rows('columns') ) :
                 the_row();
         ?>
-            <div class="<?php echo ( get_sub_field('width') != 'auto' ? '-md-'.get_sub_field('width') : 'col' ); ?><?php echo ( get_sub_field('bottom_padding') != 'none' ? ' kpb-columns__content-column--padding-bottom-'.get_sub_field('bottom_padding') : '' ); ?><?php echo ( get_sub_field('bottom_top') != 'none' ? ' kpb-columns__content-column--padding-top-'.get_sub_field('top_padding') : '' ); ?>">
+            git statuys<div class="<?php echo ( get_sub_field('width') != 'auto' ? 'col-md-'.get_sub_field('width') : 'col' ); ?><?php echo ( get_sub_field('bottom_padding') != 'none' ? ' kpb-columns__content-column--padding-bottom-'.get_sub_field('bottom_padding') : '' ); ?><?php echo ( get_sub_field('bottom_top') != 'none' ? ' kpb-columns__content-column--padding-top-'.get_sub_field('top_padding') : '' ); ?>">
                 <?php
 
                 switch (get_sub_field('content_type')):
